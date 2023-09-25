@@ -5,16 +5,16 @@ function divideArray(nums = []) {
   let evenNumbers = [];
   
   for (let num of nums) {
-    if (num % 2 === 0) { // even
+    if (num % 2 === 0) { 
       evenNumbers.push(num);
-    } else { // odd
+    } else { 
       oddNumbers.push(num);
     }
   }
   
   console.log("Even numbers:");
   if (evenNumbers.length <= 0) {
-    console.log("None.")
+    console.log("None")
   } else {
     const sortedEvenNumbers = evenNumbers.sort((a, b) => a - b);
     sortedEvenNumbers.forEach((n) => console.log(n))
@@ -22,7 +22,7 @@ function divideArray(nums = []) {
   
   console.log("Odd numbers:");
   if (oddNumbers.length <= 0) {
-    console.log("None.")
+    console.log("None")
   } else {
     const sortedOddNumbers = oddNumbers.sort((a, b) => a - b);
     sortedOddNumbers.forEach((n) => console.log(n))
